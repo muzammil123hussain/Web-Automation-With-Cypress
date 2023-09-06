@@ -1,0 +1,15 @@
+{
+  "name": "web-automation-with-cypress",
+  "version": "1.0.0",
+  "description": "Demo tutorial project for automating web app, test automation with Cypress and mocha using javascript as a lungunage and Cypress as a framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^13.1.0"
+  }
+}
