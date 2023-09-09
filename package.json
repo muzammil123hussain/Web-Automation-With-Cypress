@@ -4,7 +4,8 @@
   "description": "Demo tutorial project for automating web app, test automation with Cypress and mocha using javascript as a lungunage and Cypress as a framework",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "open" : "cypress open",
+    "test": "cypress run"
   },
   "keywords": [],
   "author": "",
