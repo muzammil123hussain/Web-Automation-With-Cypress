@@ -1,10 +1,17 @@
+/// <reference types="Cypress" />
+
+import { TodoPage } from "../page-objects/todo-page";
+
 describe("TODO Test Cases", () => {
+  const todoPage = new TodoPage();
+
   beforeEach(() => {
-    cy.visit("http://todomvc-app-for-testing.surge.sh/");
-    cy.get(".new-todo").type("learn Cypress{enter}");
+    todoPage.navigate();
+    todoPage.addTodo("Learn Cypress");
   });
+
   it("Open TODO app", () => {
-    cy.get("label").should("have.text", "learn Cypress");
+    cy.get("label").should("have.text", "Learn Cypress");
     cy.get(".toggle").should("not.be.checked");
   });
 
